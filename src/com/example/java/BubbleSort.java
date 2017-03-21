@@ -82,7 +82,6 @@ public class BubbleSort {
 
     private static void updateTextFields(Color c1, Color c2){
 
-
         String swapamount = Integer.toString(c);
         JTextField swapamountTextField = new JTextField("Swaps: " + swapamount, 1);
         pane.add(swapamountTextField);
