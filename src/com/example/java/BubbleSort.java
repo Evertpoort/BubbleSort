@@ -15,15 +15,13 @@ public class BubbleSort {
     private static int c = 0;
     private static int d = 0;
 
-    private static boolean isRunning = true;
+    private static boolean isRunning = false;
 
     private static JFrame frame1;
     private static Container pane;
     private static JButton btnStart, btnStep, btnQuit, btnPause;
 
     public static void main(String[] args) {
-
-        isRunning = false;
 
         //Fill our array with random values between 1 and 50
         Random rand = new Random();
@@ -324,9 +322,8 @@ public class BubbleSort {
 
         updateTextFields(Color.ORANGE, Color.BLACK);
 
-        if (b >= l){
+        if (b >= 10){
             //Done sorting
-
             updateTextFields(Color.GREEN, Color.BLACK);
             //System.exit(0);
         }
@@ -335,22 +332,18 @@ public class BubbleSort {
     public static class btnStartAction implements ActionListener{
         public void actionPerformed (ActionEvent e) {
             isRunning = true;
-            checkStatus();
         }
     }
 
     public static class btnStepAction implements ActionListener{
         public void actionPerformed (ActionEvent e) {
             bubbleSort(intArray);
-            isRunning = false;
-            checkStatus();
         }
     }
 
     public static class btnPauseAction implements ActionListener{
         public void actionPerformed (ActionEvent e){
             isRunning = false;
-            checkStatus();
         }
     }
 
