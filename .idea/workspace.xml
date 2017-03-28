@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="315f477b-f19e-4834-aa98-cc89e7873cbe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/java/BubbleSort.java" afterPath="$PROJECT_DIR$/src/com/example/java/BubbleSort.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../../../Lynda/Exercise Files/03_GettingStarted/BubbleSort/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -365,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490109714378</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed some minor flaws">
+      <created>1490713997433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490713997433</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -407,7 +413,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
+    <MESSAGE value="Fixed some minor flaws" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some minor flaws" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
