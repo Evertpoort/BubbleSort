@@ -32,8 +32,6 @@ public class BubbleSort {
 
         //Create Graphical User Interface
         createGUI();
-        createButtons();
-        updateTextFields(Color.orange, Color.black);
 
         while (true){
             try {
@@ -54,6 +52,9 @@ public class BubbleSort {
 
         pane = frame1.getContentPane();
         pane.setLayout(null);
+
+        createButtons();
+        updateTextFields(Color.orange, Color.black);
     }
 
     private static void createButtons(){
@@ -292,15 +293,18 @@ public class BubbleSort {
 
     static void bubbleSort(int[] intArray) {
         //The function that actually sorts the values of the array (one iteration)
-        int l = intArray.length;
-        int j = BubbleSort.a;
+        int l = intArray.length;// = 10
+        int j = BubbleSort.a;   // = 0
         int temp;
 
-        if (b < l) { //Checks if there have been swaps in the last n iterations, if not: exit
+        // b = amount of steps without swapping
+        // c = amount of swaps (for GUI )
+
+        if (b < l) {
 
             BubbleSort.d++;
 
-            if (j < l - 1) {
+            if (j < l - 1) {   //If the end of the array has not yet been reached
                 if (intArray[j] > intArray[j + 1]) {
                     temp = intArray[j + 1];
                     intArray[j + 1] = intArray[j];
@@ -316,7 +320,7 @@ public class BubbleSort {
             }
 
             else {
-                a = 0;
+                a = 0;  //Reset amount of steps without swaps
             }
         }
 
